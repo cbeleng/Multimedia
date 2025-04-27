@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Multimedia</string>
+
+    <!-- MainActivity -->
+    <string name="selecciona_opcion">Selecciona una opción</string>
+    <string name="btn_reproducir_sonido">REPRODUCIR SONIDO</string>
+    <string name="btn_reproducir_audio">REPRODUCIR AUDIO</string>
+    <string name="btn_reproducir_video">REPRODUCIR VIDEO</string>
+    <string name="btn_salir">SALIR</string>
+
+    <string name="dialogo_salir">Se va a cerrar la aplicación, ¿está seguro de querer salir?</string>
+
+    <string name="titulo_audio">Seleccione el audio que desea escuchar</string>
+    <string name="cancion_1">Canción 1</string>
+    <string name="cancion_2">Canción 2</string>
+    <string name="cancion_3">Canción 3</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+
+    <string name="titulo_video">Seleccione el vídeo que desea ver</string>
+    <string name="video_londres">Londres</string>
+    <string name="video_ny">Nueva York</string>
+    <string name="video_edimburgo">Edimburgo</string>
+</resources>

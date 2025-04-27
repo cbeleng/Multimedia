@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_audio_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_audio"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rg_canciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_audio_title"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_cancion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancion_1" />
+
+        <RadioButton
+            android:id="@+id/rb_cancion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancion_2" />
+
+        <RadioButton
+            android:id="@+id/rb_cancion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancion_3" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_play_audio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/play"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/rg_canciones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_pause_audio" />
+
+    <Button
+        android:id="@+id/btn_pause_audio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pause"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/rg_canciones"
+        app:layout_constraintStart_toEndOf="@id/btn_play_audio"
+        app:layout_constraintEnd_toStartOf="@id/btn_stop_audio" />
+
+    <Button
+        android:id="@+id/btn_stop_audio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/stop"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/rg_canciones"
+        app:layout_constraintStart_toEndOf="@id/btn_pause_audio"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_atras_audio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Atrás"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_stop_audio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
